@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Контейнер для центрирования и ширины */
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 60px;
+    background-color: burlywood;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок */
+.header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+/* Основное содержимое */
+.mainContent {
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Подвал */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Ограничиваем ширину таблицы и включаем адаптацию */
+#tableContainer {
+    overflow-x: auto; /* Включаем горизонтальную прокрутку при необходимости */
+}
+
+table {
+    width: 100%; /* Таблица будет занимать всю ширину контейнера */
+    border-collapse: collapse; /* Убираем промежутки между ячейками */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word; /* Разбиваем длинные слова */
+}
+
+thead {
+    background-color: #f3ad66;
+    color: white;
+}
+
+/* Чередование фона для четных строк */
+tbody tr:nth-child(even) {
+    background-color: #c8f6d5; /* Цвет для четных строк */
+}
+
+/* Чередование фона для нечетных строк */
+tbody tr:nth-child(odd) {
+    background-color: #e0f7fa; /* Цвет для нечетных строк */
+}
+
+/* Стили для диаграммы */
+.chartWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%; /* Убедитесь, что контейнер занимает всю ширину экрана */
+    box-sizing: border-box; /* Чтобы padding не увеличивал ширину контейнера */
+}
+
+canvas {
+    width: 100%;
+    border: 1px solid #ddd;
+    height: auto;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px; /* Уменьшенные отступы для телефонов */
+    }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px; /* Уменьшенные отступы для телефонов */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 0 40px; /* Отступы для планшетов */
+    }
+}
